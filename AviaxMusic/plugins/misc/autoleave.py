@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from AviaxMusic import app
-from AviaxMusic.core.call import Anony, autoend
+from AviaxMusic.core.call import Aviax, autoend
 from AviaxMusic.utils.database import get_client, is_active_chat, is_autoend
 
 
@@ -59,7 +59,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Anony.stop_stream(chat_id)
+                    await Aviax.stop_stream(chat_id)
                 except:
                     continue
                 try:
