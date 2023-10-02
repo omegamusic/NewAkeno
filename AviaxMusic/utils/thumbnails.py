@@ -9,7 +9,7 @@ import numpy as np
 from unidecode import unidecode
 
 from config import YOUTUBE_IMG_URL
-from YukkiMusic import app
+from AviaxMusic import app
 
 from youtubesearchpython.__future__ import VideosSearch
 from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
