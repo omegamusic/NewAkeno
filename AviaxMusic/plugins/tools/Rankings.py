@@ -1,4 +1,5 @@
 from AviaxMusic.utils import get_name, increase_count, chatdb
+from AviaxMusic import app
 import uvloop
 from pyrogram import filters
 from datetime import date
