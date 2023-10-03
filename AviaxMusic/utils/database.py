@@ -1,4 +1,5 @@
 import random
+import asyncio
 from datetime import date
 from typing import Dict, List, Union
 
@@ -658,7 +659,7 @@ def increase_count(chat, user):
     elif not user_db.get(today):
         user_db = {}
     else:
-        user_db = user_db[today]
+        user_db = user_db.get(today, {})
 
     if user in user_db:
         user_db[user] += 1
