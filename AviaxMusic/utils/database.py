@@ -652,7 +652,7 @@ async def remove_banned_user(user_id: int):
 def increase_count(chat, user):
     user = str(user)
     today = str(date.today())
-    user_db = chatdb.find_one({"chat": chat})
+    user_db = asyncio.run(chatdb.find_one({"chat": chat}))
 
     if not user_db:
         user_db = {}
