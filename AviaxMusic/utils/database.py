@@ -648,8 +648,7 @@ async def remove_banned_user(user_id: int):
         return
     return await blockeddb.delete_one({"user_id": user_id})
 
-
-async def increase_count(chat, user):
+def increase_count(chat, user):
     user = str(user)
     today = str(date.today())
     user_db = chatdb.find_one({"chat": chat})
