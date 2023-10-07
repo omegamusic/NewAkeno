@@ -5,7 +5,7 @@ import aiohttp
 import asyncio
 import aiofiles
 
-import numpy as np
+
 from unidecode import unidecode
 
 from config import YOUTUBE_IMG_URL
